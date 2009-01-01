@@ -1,0 +1,19 @@
+﻿@charset "utf-8";
+
+h1{background-color:black;color:White;padding-top:1ex;padding-bottom:1ex;text-align:center;}
+h2{border-bottom:2px solid orange;border-left:15px solid orange;padding-left:1ex;margin-top:1em;}
+h3{border-bottom:1px solid gray;}
+p{text-indent:1em;}
+ul{margin-bottom:1em;}
+
+h3{margin-left:1em;margin-right:1em;}
+p,h4{margin-left:2em;margin-right:2em;}
+
+table.normal{border-collapse:collapse;border:1px solid silver;}
+table.normal td,table.normal th{border:1px solid silver;padding:.5ex;}
+
+a{color:#08a;}
+a:hover{color:Gray;}
+a.internal{text-decoration:none;}
+ul.stars li{list-style-image:url('star.png');}
+ul.live-accounts li{list-style-image:url('acc.png');}
