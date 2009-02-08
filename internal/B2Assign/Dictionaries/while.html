@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>	Dictionary of C++</title>
+<link rel="stylesheet" type="text/css" href="body.css"> 
+<link rel="stylesheet" type="text/css" href="list.css"> 
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000"> 
+
+<ul> 
+<span bgcolor="#ff8000"><b>while文</b></span>
+<hr>
+<div style="width: 100%; border: 1px #ff8000 solid; background-color: #ffffff; padding: 5px;"> 
+<li>例文:<pre>
+#include<iostream>
+using namespace std;
+
+int main(){//やっぱり0から9までたしつづけてくれるプログラム
+	int n=0;
+	int i=0;
+	while(i<10){
+		n=n+i;
+		i++;//iを1増やす
+	}
+	cout << n << endl;
+
+	return 0;
+}
+</pre>
+</li>
+</div>
+<div style="width: 100%; border: 1px #ff8000 solid; background-color: #ffffff; padding: 5px;"> 
+<li>たとえばwhile(1){}とかにすると∞ループができる</li>
+<li>breakっていう子がいる。そいつをみつけるとループから抜ける。以下例文<pre>
+#include<iostream>
+using namespace std;
+
+int main(){//やっぱり0から9までたしつづけてくれるプログラム
+	int n=0;
+	int i=0;
+	while(1){//これだけだと∞ループ。しかし・・・
+		n=n+i;
+		i++;//iを1増やす
+		if(i==10){//iが１０になったら
+			break;//ループをぬけろと
+		}
+	cout << n << endl;
+
+	}
+
+	return 0;
+}
+</pre>
+</li>
+
+
+
+
+
+
+</div> 
+</ul> 
+</body>
+</html>

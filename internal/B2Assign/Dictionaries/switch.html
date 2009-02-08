@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>	Dictionary of C++</title>
+<link rel="stylesheet" type="text/css" href="body.css"> 
+<link rel="stylesheet" type="text/css" href="list.css"> 
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000"> 
+
+<ul> 
+<span bgcolor="#ff8000"><b></b></span>
+<hr>
+<div style="width: 100%; border: 1px #ff8000 solid; background-color: #ffffff; padding: 5px;"> 
+<li> 例文<pre>//どうでもいいけどわたしあんまこれつかわない
+#include<iostream>
+using namespace std;
+
+int main(){//取り込んだ値が1ならネコと2ならイヌと後はウシと返す
+	int x;
+	cout << "please put a number:" ;
+	cin >> x;
+	swtich(x){
+		case 1://x=1のときの処理
+			cout << "ネコ" endl;	
+		break;//ここまではx=1のときの処理
+			
+		case 2:
+			cout << "イヌ" endl;
+		break;
+		
+		default://どれにも該当しないときの処理
+			cout << "ウシ" endl;
+		//break;はここだけいらない
+		
+	}
+	return 0;
+}
+</pre>
+</li>
+
+
+
+</div> 
+</ul> 
+</body>
+</html>

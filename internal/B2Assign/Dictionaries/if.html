@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>	Dictionary of C++</title>
+<link rel="stylesheet" type="text/css" href="body.css"> 
+<link rel="stylesheet" type="text/css" href="list.css"> 
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000"> 
+
+<ul> 
+<span bgcolor="#ff8000"><b>ifについて</b></span>
+<hr>
+<div style="width: 100%; border: 1px #ff8000 solid; background-color: #ffffff; padding: 5px;"> 
+<hr>
+<li>例文:<pre>
+#include<iostream>
+using namespace std;
+
+int main(){//10よりおおきいか判定する関数
+	double x;
+	cout << "please put a number" << endl;
+	cin >> x;
+	if(x>10){
+		cout << "over 10 "<< endl;
+	}
+	
+	return 0;
+}
+
+
+</pre>
+</li>
+</div>
+
+<div style="width: 100%; border: 1px #ff8000 solid; background-color: #ffffff; padding: 5px;"> 
+
+<li>例文:<pre>
+#include<iostream>
+using namespace std;
+
+int main(){//2でわって割り切れたらevenと、わりきれなかったらoddと返す関数
+	int x;//例外処理がどうとかいわないでださいｗｗｗ
+	cout <<"please put a number:";
+	cin >> x;
+	if(x%2){//%はつまり2でわったあまりを出す関数。0じゃかったらifの中身が実行されると
+		cout << "odd" << endl;
+	
+	}
+	else{//それいがいのときどうするかという意味
+		cout <<"even" <<endl;	
+	}
+	return 0;
+}
+
+</pre>
+</li>
+
+
+</div> 
+
+</ul> 
+
+
+
+
+
+
+</body>
+</html>
