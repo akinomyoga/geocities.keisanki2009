@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>色々プログラムたち</title>
+<link rel="stylesheet" href="keisanki2009.std.css" charset="utf-8" />
+</head>
+<body>
+<h1>色々プログラムあそーと</h1>
+<p>作ったプログラムの中で見ていて面白い物を選んで載せる事にします。</p>
+<p>本当は、一番力を入れていたのは流体だったのですが、動作が重いし、余り良い結果が出なかったので…それらは載せられません…。
+それで、急遽慌てて掻き集めたのが此処にある物なので、何れも不完全な感じのプログラムですが、皆それなりに見て楽しめる物と思います。
+</p>
+<!--<p>最新版は <a href="http://akiba.geocities.jp/keisanki2009/pub/murase/">Web 上</a>から見られる様にしておきます。</p>-->
+<p>最新版はこの頁です。因みに他の班員の最新版プログラムに関しては <a href="http://akiba.geocities.jp/keisanki2009/">Physics Lab 2009 計算機</a> から御覧下さい。</p>
+<p style="text-align:right;">理学部物理学科四年 村瀬</p>
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+<h2 id="ising">Ising Model - Monte Carlo Method</h2>
+<h3>プログラム</h3>
+<p>バイナリ: [<a href="Ising.zip">Ising.zip</a>; 38KiB]</p>
+<p>使用言語その他: C++/CLI, .NET Framework 2.0</p>
+<h3>解説</h3>
+<p>イジング模型をモンテカルロ法によって解く様子を表示します。
+磁化とか相関距離とか具体的な計算はしていません…。
+見て楽しむ物と思って下さい。悪しからず</p>
+<p>パラメータ T は温度を表しています。
+パラメータ J は隣接スピンとの相互作用を表しています。
+J&lt;0 の時は反磁性に対応します。
+パラメータ H は外場を表しています。</p>
+<h3>画面</h3>
+<table align="center" class="normal" style="width:80%">
+<tr><td>
+	高温の時の様子。外場無し。
+	<p>くしゃくしゃとしている様子が見られます。</p>
+</td><td>
+	<img alt="ising" src="ising01.png" style="width:300px;height:300px;"/>
+</td></tr>
+<tr><td>
+	臨界点付近の様子。外場無し。
+	<p>黒い部分が増えそうになったり、白い部分が増えそうになったり不安定です。</p>
+</td><td>
+	<img alt="ising" src="ising02.png" style="width:300px;height:300px;"/>
+</td></tr>
+<tr><td>
+	低温の時の様子。外場無し。
+	(平衡状態には到っていません)
+	<p>はっきりとしたドメインが出来ます。その内に、黒か白のどちらかが勝ってほぼ一色になります。</p>
+</td><td>
+	<img alt="ising" src="ising03.png" style="width:300px;height:300px;"/>
+</td></tr>
+<tr><td>
+	反磁性、外場無し、低温の時。
+	(平衡状態には到っていません)
+	<p>パラメータの設定は以下の様にしました。
+	ドメインとドメインの間の欠陥が紐の様に見えます。</p>
+	<ul>
+	<li>T = 1.0</li>
+	<li>J = -1.5</li>
+	<li>H = 0</li>
+	</ul>
+</td><td>
+	<img alt="ising" src="isingB.png" style="width:300px;height:300px;"/>
+</td></tr>
+<tr><td>
+	反磁性、外場あり、低温の時の一例。
+	<p>パラメータの設定は以下の様にしました。
+	高温から一気に低温にすると右の様になります。</p>
+	<ul>
+	<li>T = 0.1</li>
+	<li>J = -1.5</li>
+	<li>H = 4</li>
+	</ul>
+</td><td>
+	<img alt="ising" src="isingA.png" style="width:300px;height:300px;"/>
+</td></tr>
+</table>
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+<h2 id="gasliq">気液相転移模型? - Monte Carlo Method</h2>
+<h3>プログラム</h3>
+<p>バイナリ: [<a href="PhaseTrans.zip">PhaseTrans.zip</a>; 40KiB]</p>
+<p>使用言語その他: C++/CLI, .NET Framework 2.0</p>
+<h3>解説</h3>
+<p>粒子数を保存する様にして、隣接セルに存在する粒子との相互作用、
+及び重力を設定してモンテカルロ法によって計算している様子を表示します。
+こちらも具体的な統計は一切行っていません。</p>
+<ul>
+<li>パラメータ T は温度を表しています。</li>
+<li>パラメータ B は粒子間の相互作用を表します。正の値を指定すると粒子はくっつきたがり、負の値を指定すると粒子は離れたがります。</li>
+<li>パラメータ G は下向きの重力を表しています。負の値を指定すると、粒子は浮き上がっていきます。</li>
+<li>パラメータ「配置行数」は [下に配置] ボタンを押した時の粒子の量に対応する物です。
+具体的には、[下に配置] ボタンを押すと、下から指定した行数だけ粒子を詰めた状態になります。</li>
+</ul>
+
+<h3>画面</h3>
+<table align="center" class="normal" style="width:80%">
+<tr><td>
+	比較的温度の低い時の様子。
+	<p>液体の様に見えます。</p>
+	<p>パラメータの設定は以下の様にしました。</p>
+	<ul>
+	<li>T = 10</li>
+	<li>B = 10</li>
+	<li>G = 1</li>
+	</ul>
+</td><td>
+	<img alt="ising" src="gas-liq1.png" style="width:300px;height:300px;"/>
+</td></tr>
+<tr><td>
+	高温の時の様子です。
+	<p>重力の位置エネルギーによる Maxwell 分布を実現している様に見えます。
+	(ちゃんと検証していないので、断定は出来ませんが。)
+	気体の様な物と言って良いと思います。</p>
+	<p>パラメータの設定は以下の様にしました。</p>
+	<ul>
+	<li>T = 200</li>
+	<li>B = 10</li>
+	<li>G = 1</li>
+	</ul>
+</td><td>
+	<img alt="ising" src="gas-liq2.png" style="width:300px;height:300px;"/>
+</td></tr>
+<tr><td>
+	高温から低温に急激に冷やした直後の様子です。
+	<p>上半分の領域にある塊たちは、露の様な物です。冷やした瞬間に結露して幾つか出来上がった後に、下へ落ちていきます。</p>
+</td><td>
+	<img alt="ising" src="gas-liq3.png" style="width:300px;height:300px;"/>
+</td></tr>
+</table>
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+<h2 id="life">Conway's Game of Life - Cell Automata</h2>
+<h3>プログラム</h3>
+<p>バイナリ: [<a href="GameOfLife.zip">GameOfLife.zip</a>; 879KiB]</p>
+<p>使用言語その他: C++/CLI, .NET Framework 2.0, OpenMP, SSE</p>
+<h3>解説</h3>
+<p>これは、物理系のシミュレーションではありませんが、
+簡単な割に面白いので GUI/OpenMP 等の例として作成しました。
+</p>
+<p>Conway's Game of Life は「ライフゲーム」という名前でよく知られています。
+これは、碁盤などに石を幾つか並べた状態を考えて頂くと分かり易いと思います。
+ライフゲームは、前の盤面の状態から次の盤面の状態を決めるルールがあって、
+そのルールに従ってどんどんと盤面を変化させていくゲームです。
+ルールは、それぞれの升目について、</p>
+<ol>
+<li>前の盤面の周りの八つの升目の内、石の於いてある物の数を数えて n とする</li>
+<li>n = 3 の場合には、次の盤面でその升目には意思がある事が決定します。</li>
+<li>また、n = 2 で且つ、前の盤面で石が置いてあった場合は、次の盤面でも石が残ります。</li>
+<li>それ以外の場合には、次の盤面ではその升目に石は置きません。</li>
+</ol>
+<p>と言う物です。「n が幾つの時に、次の盤面で石が置かれるか」といった
+ルールには色々なバリエーションがありますが、
+最も良く知られているものは上記の物です。</p>
+<p>※ 今回のプログラムでは、上のルールを採用し、周期境界条件で計算を行っています。</p>
+<h3>画面</h3>
+<table align="center" class="normal" style="width:80%">
+<tr><td>
+	準定常な状態の拡大図
+	<p>→の物は、実際のプログラムの画面を拡大した物です。
+	色々なパターンが存在している事が分かります。
+	ライフゲームという名前は、これらの多様な個体パターンの様子が、
+	色々な種を有する現実の生物界の様に見える事から名付けられています。</p>
+	
+	<p>(この拡大図を見ていると、顕微鏡で微生物を覗いて居る様な気分です…。)</p>
+</td><td>
+	<img alt="ising" src="life02.png" style="width:300px;height:300px;"/>
+</td></tr>
+<tr><td>
+	パターン "spacefiller" が周期境界で自分自身と衝突して砕ける瞬間。
+	<p>spacefiller というのはライフゲームに於いて無限に成長を続けていくパターンとして知られているものの一つです。
+	このプログラムでは周期境界条件で計算をしている為に、無限に成長していく事は敵わずに、途中で砕けてしまいます。</p>
+</td><td>
+	<img alt="ising" src="life01.png" style="width:300px;height:300px;"/>
+</td></tr>
+</table>
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+<h2 id="particles">粒子法擬き - 分子動力学</h2>
+<h3>プログラム</h3>
+<p>バイナリ: [<a href="Particles.zip">Particles.zip</a>; 17KiB]</p>
+<p>使用言語その他: C++/CLI, .NET Framework 2.0</p>
+<h3>解説</h3>
+<p>これは…慌てて DVD 収録用に作ろうとした好い加減なプログラムです。
+流体の粒子法「擬き」です。実体は、単なる二体相互作用<!--二流紙乾燥後作用-->を入れた分子動力学に過ぎません。
+残念ながら SPH でも MPS でもないのです。
+</p>
+<p>系としては、箱の中に粒子を 500 個入れて計算しています。更に、其れっぽく見せる為に、箱を横に振動させています。</p>
+<h3>画面</h3>
+<table align="center" class="normal" style="width:80%">
+<tr><td>
+	粒子たちの様子。
+	<p>右の方で山の様になっている部分は、
+	右の壁にぶつかった後、跳ね上がった粒子達です。</p>
+	<p>※ 赤い粒子と青い粒子に区別はありません。
+	赤い粒子は全体的な流れを見やすくする為のマーカです。</p>
+</td><td>
+	<img alt="ising" src="pseu-part1.png" style="width:300px;height:300px;"/>
+</td></tr>
+<tr><td>
+	粒子密度で表示した場合。
+	<p>少しは水の様な物に見えるでしょうか…?</p>
+	<p>※ <del>こちらは描画が遅くて「かくかく」するので、
+	ここで提供するプログラムではこの表示は出来ない様にしてあります。</del>
+	描画を改善しました。Particles[density].exe が、此方の表示の仕方を使用した物です。
+	</p>
+</td><td>
+	<img alt="ising" src="pseu-part2.png" style="width:300px;height:300px;"/>
+</td></tr>
+</table>
+<p></p>
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+<h2>参考文献</h2>
+<p>此処に載せているプログラムは何れも適当に作った物なので、参考文献は存在しません。</p>
+</body>
+</html>
