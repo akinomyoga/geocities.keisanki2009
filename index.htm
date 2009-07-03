@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Physics Lab 2009 計算機</title>
+<link rel="stylesheet" href="keisanki2009.std.css" charset="utf-8" />
+<style type="text/css">
+table.normal td,table.normal th{vertical-align:top;}
+p.update{text-align:right;}
+</style>
+</head>
+<body>
+<h1>Physics Lab 2009 計算機シミュレーション班</h1>
+<p>此処は、《東京大学理学部物理学科 2009 年度五月祭展示 Physics Lab 2009》 の計算機シミュレーション班 (略称 計算機班) の頁です。</p>
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+<h2>挨拶 (五月祭配布 DVD より抜粋)</h2>
+<blockquote>
+	<p>計算機シミュレーション班は、各人が作成したプログラムを掲載することにしました。
+	そのため、形式に統一性はないかもしれませんが、他の班に無い多様性に富んだ内容になっていると思います。
+	プログラムを動かしてみて、自分のコンピュータ上で自然界を再現してみましょう。
+	</p>
+	<p>（ただ、プログラムの実行は自己責任でお願いします。）
+	また、ここまで来ることが出来たのはお世話をしてくださった原田先生、情報基盤センターの先生方のおかげです。
+	ここで感謝の辞を述べさせていただきます。 
+	</p>
+	<p style="text-align:right">(計算機シミュレーション班班長 理学部物理学科四年 金澤輝代士)</p>
+</blockquote>
+<h2>発表プログラム</h2>
+<p>五月祭展示発表の際に公開したプログラムを此処でも見られる様にしています。
+但し、DVD への収録以降にもプログラムに変更が加えられている場合がありますので、DVD に載っている物とは多少内容が異なる可能性があります。
+(此処で公開している物は最新版です。)
+</p>
+<h3>実行できない場合</h3>
+<p>x86 の Windows に於いて、</p>
+<blockquote>
+「このアプリケーションの構成が正しくないため、アプリケーションを開始できませんでした。アプリケーションを再度インストールすることにより問題が解決する場合があります。」</blockquote>
+<p>等と表示されて実行できない場合には、</p>
+<ul>
+<li><a href="http://www.microsoft.com/downloads/details.aspx?displaylang=ja&amp;FamilyID=200b2fd9-ae1a-4a14-984d-389c36f85647"
+>Visual C++ 2005 SP1 再頒布可能パッケージ (x86)</a></li>
+<li><a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=a5c84275-3b97-4ab7-a40d-3802b2af5fc2&amp;DisplayLang=ja"
+>Visual C++ 2008 SP1 再頒布可能パッケージ (x86)</a></li>
+</ul>
+<p>から、更新プログラムをダウンロードして実行してからお試し下さい。</p>
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+<h3>粒子系プログラム</h3>
+<table align="center" class="normal" summary="粒子系プログラム一覧">
+<colgroup><col /><col style="width:30em;" /></colgroup>
+<tr><td><img src="pub/tsunoda/IcoPart.png" alt="粒子" style="width:100px;height:100px;" /></td><td>
+	<h4>粒子の運動のシミュレーション</h4>
+	<ul>
+	<li>説明 <a href="pub/tsunoda/particlesim.txt">[particlesim.txt]</a></li>
+	<li>実行形式 <a href="pub/tsunoda/particlesim.zip">[particlesim.zip]</a></li>
+	</ul>
+	<p class="update">作成者 角田 ／ 更新日 2009/06/06</p>
+</td></tr>
+<tr><td><img src="pub/nishi/IcoSolar.png" alt="太陽系" style="width:100px;height:100px;" /></td><td>
+	<h4>太陽系生成シミュレーション</h4>
+	<ul>
+	<li>説明 <a href="pub/nishi/solarsys.txt">[solarsys.txt]</a></li>
+	<li>実行形式 <a href="pub/nishi/production-of-solar-system.zip">[production-of-solar-system.zip]</a> (ソース込み GPL)</li>
+<!--
+	<li>実行形式 <a href="pub/nishi/solarsys-bin.zip">[solarsys-bin.zip]</a> (ソース込み GPL)</li>
+	<li>ソース <a href="pub/nishi/solarsys-src.zip">[solarsys-src.zip]</a> (ライセンス: GPL)</li>
+-->
+	</ul>
+	<p class="update">作成者 西 ／ 更新日 2009/06/29</p>
+</td></tr>
+<tr><td><img src="pub/murase/IcoPartM.png" alt="粒子達" style="width:100px;height:100px;" /></td><td>
+	<h4>粒子法擬き - 分子動力学</h4>
+	<ul>
+	<li><a href="pub/murase/index.htm#particles">説明</a></li>
+	<li>実行形式 <a href="pub/murase/Particles.zip">[Particles.zip]</a></li>
+	</ul>
+	<p class="update">作成者 村瀬 ／ 更新日 2009/06/06</p>
+</td></tr>
+<tr><td><img src="pub/hiratani/IcoBrown.png" alt="ブラウン運動" style="width:100px;height:100px;" /></td><td>
+	<h4>ブラウン運動</h4>
+	<ul>
+	<li>説明 <a href="pub/hiratani/sim_hiratani.pdf">[sim_hiratani.pdf]</a></li>
+	<li>実行形式 <a href="pub/hiratani/Brown.zip">[.zip]</a></li>
+	</ul>
+	<p class="update">作成者 平谷 ／ 更新日 2009/06/19</p>
+</td></tr>
+<tr><td><img src="pub/IcoPrep.png" alt="準備中" style="width:100px;height:100px;" /></td><td>
+	<h4>三次元ブラウン運動</h4>
+	<ul>
+	<li><a href="pub/tanizaki/Brownian.txt">説明 [.txt]</a></li>
+	<li><a href="pub/tanizaki/3dimBrownian.zip">実行形式 [.zip]</a></li>
+	</ul>
+	<p class="update">作成者 谷崎 ／ 更新日 2009/06/06</p>
+</td></tr>
+</table>
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+<h3>「場」系プログラム</h3>
+<table align="center" class="normal" summary="場系プログラム一覧">
+<colgroup><col /><col style="width:30em;" /></colgroup>
+<tr><td><img src="pub/terai/IcoLotka.png" alt="ロトカ・ヴォルテラ" style="width:100px;height:100px;" /></td><td>
+	<h4>ロトカ・ヴォルテラの拡散方程式 - 拡散方程式</h4>
+	<ul>
+	<li><a href="pub/terai/Lotka.pdf">説明 [.pdf]</a></li>
+	<li><a href="pub/terai/lotka.zip">実行形式 [.zip]</a></li>
+	<li><a href="pub/terai/lotka-src.zip">ソース [.zip]</a></li>
+	</ul>
+	<p class="update">作成者 寺井 ／ 更新日 2009/06/06</p>
+</td></tr>
+<tr><td><img src="pub/kanazawa/IcoFluidK.png" alt="箱の回りの流れ" style="width:100px;height:100px;" /></td><td>
+	<h4>箱の回りの流れ - 風下圧力法？</h4>
+	<ul>
+	<li>実行形式 <a href="pub/kanazawa/fluid.zip">[自己解凍書庫 in fluid.zip]</a></li>
+	</ul>
+	<p class="update">作成者 金澤 ／ 更新日 2009/06/07</p>
+</td></tr>
+<tr><td><img src="pub/rapid/IcoMac.png" alt="箱の回りの流れ" style="width:100px;height:100px;" /></td><td>
+	<h4>箱の回りの流れ - MAC 法</h4>
+	<ul>
+	<li><a href="pub/rapid/FluidMacMethod.pdf">説明 [.pdf]</a></li>
+	<li><a href="pub/rapid/FluidMacMethod.zip">実行形式 [.zip]</a></li>
+	</ul>
+	<p class="update">作成者 立川 ／ 更新日 2009/06/06</p>
+</td></tr>
+<tr><td><img src="pub/hiratani/IcoBz2.jpg" alt="BZ 反応" style="width:100px;height:100px;" /></td><td>
+	<h4>Belousov-Zhabotinsky 反応モデル - 拡散方程式</h4>
+	<ul>
+	<li><a href="pub/hiratani/sim_hiratani.pdf">説明 [.pdf]</a></li>
+	<li><a href="pub/hiratani/Bz2.zip">実行形式 [.zip]</a></li>
+	</ul>
+	<p class="update">作成者 平谷 ／ 更新日 2009/06/19</p>
+</td></tr>
+<tr><td><img src="pub/ichikawa/IcoStrFinite.png" alt="有限要素法" style="width:100px;height:100px;" /></td><td>
+	<h4>弦の振動 - 有限要素法 (良い例)</h4>
+	<ul>
+	<li><a href="pub/ichikawa/string_finite.zip">実行形式 [.zip]</a></li>
+	</ul>
+	<p class="update">作成者 市川 ／ 更新日 2009/06/07</p>
+</td></tr>
+<tr><td><img src="pub/ichikawa/IcoStrSabun.png" alt="差分法" style="width:100px;height:100px;" /></td><td>
+	<h4>弦の振動 - 差分法 (比較用良くない例)</h4>
+	<ul>
+	<li><a href="pub/ichikawa/string_sabun.zip">実行形式 [.zip]</a></li>
+	</ul>
+	<p class="update">作成者 市川 ／ 更新日 2009/06/07</p>
+</td></tr>
+</table>
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+<h3>モンテカルロ法プログラム</h3>
+<table align="center" class="normal" summary="粒子系プログラム一覧">
+<colgroup><col /><col style="width:30em;" /></colgroup>
+<tr><td><img src="pub/rapid/IcoClock.png" alt="クロックモデル" style="width:100px;height:100px;" /></td><td>
+	<h4>クロック模型 - Mote Carlo Method</h4>
+	<ul>
+	<li>説明 <a href="pub/rapid/ClockModel.pdf">[ClockModel.pdf]</a></li>
+	<li>実行形式 <a href="pub/rapid/ClockModel.zip">[ClockModel.zip]</a></li>
+	</ul>
+	<p class="update">作成者 立川 ／ 更新日 2009/06/06</p>
+</td></tr>
+<tr><td><img src="pub/murase/IcoGasLiqM.png" alt="気液相転移" style="width:100px;height:100px;" /></td><td>
+	<h4>気体・液体の模型 - Monte Carlo Method</h4>
+	<ul>
+	<li><a href="pub/murase/index.htm#gasliq">説明</a></li>
+	<li>実行形式 <a href="pub/murase/PhaseTrans.zip">[PhaseTrans.zip]</a></li>
+	<li>ソース (C++/CLI) <a href="pub/murase/PhaseTrans-src.20090618.zip">[PhaseTrans-src.20090618.zip]</a></li>
+	</ul>
+	<p class="update">作成者 村瀬 ／ 更新日 2009/06/06</p>
+</td></tr>
+<tr><td><img src="pub/murase/IcoIsingM.png" alt="Ising 模型" style="width:100px;height:100px;" /></td><td>
+	<h4>Ising 模型 - Monte Carlo Method</h4>
+	<ul>
+	<li><a href="pub/murase/index.htm#ising">説明</a></li>
+	<li>実行形式 <a href="pub/murase/Ising.zip">[Ising.zip]</a></li>
+	<li>ソース (C++/CLI) <a href="pub/murase/Ising-src.20090618.zip">[Ising-src.20090618.zip]</a></li>
+	</ul>
+	<p class="update">作成者 村瀬 ／ 更新日 2009/06/06</p>
+</td></tr>
+<tr><td><img src="pub/funo/IcoIsing2.png" alt="準備中" style="width:100px;height:100px;" /></td><td>
+	<h4>イジング模型 - Monte Carlo Method</h4>
+	<ul>
+	<li>説明 <a href="pub/funo/ising2.pdf">[ising2.pdf]</a></li>
+	<li>実行形式 <a href="pub/funo/ising2.zip">[ising2.zip]</a></li>
+	</ul>
+	<p class="update">作成者 布能 ／ 更新日 2009/07/04</p>
+</td></tr>
+</table>
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+<h3>ゲーム系プログラム</h3>
+<table align="center" class="normal" summary="ゲーム系プログラム一覧">
+<colgroup><col /><col style="width:30em;" /></colgroup>
+<!--
+<tr><td><img src="pub/rapid/IcoGame.png" alt="シューティング" style="width:100px;height:100px;" /></td><td>
+	<h4>シューティングゲーム - 分子動力学？</h4>
+	<ul>
+	<li><a href="pub/rapid/Shooting.pdf">説明 [.pdf]</a></li>
+	<li><a href="pub/rapid/shooting.zip">実行形式 [.zip]</a></li>
+	</ul>
+	<p class="update">作成者 立川 ／ 更新日 2009/06/19</p>
+</td></tr>
+-->
+<tr><td><img src="pub/murase/IcoLifeM.png" alt="ライフゲーム" style="width:100px;height:100px;" /></td><td>
+	<h4>ライフゲーム - Conway's Game of Life</h4>
+	<ul>
+	<li><a href="pub/murase/index.htm#life">説明</a></li>
+	<li><a href="pub/murase/GameOfLife.zip">実行形式 [.zip]</a></li>
+	</ul>
+	<p class="update">作成者 村瀬 ／ 更新日 2009/06/06</p>
+</td></tr>
+<tr><td><img src="pub/shi9/IcoCirNeu.png" alt="ちるのい" style="width:100px;height:100px;" /></td><td>
+	<h4>カードゲーム「ちるのい!」戦略探索</h4>
+	<ul>
+	<li><a href="pub/shi9/CirNeu.pdf">説明 [.pdf]</a></li>
+	<li><a href="pub/shi9/CirNeu.zip">実行形式 + ソース [.zip]</a></li>
+	</ul>
+	<p class="update">作成者 澤田 ／ 更新日 2009/06/06</p>
+</td></tr>
+</table>
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+<h3>その他</h3>
+<table align="center" class="normal" summary="その他のプログラム一覧">
+<colgroup><col /><!--タイトル/画像--><col style="width:30em;" /><!--説明--></colgroup>
+<tr><td><img src="pub/hiratani/IcoGum.png" alt="ゴム弾性" style="width:100px;height:100px;" /></td><td>
+	<h4>ゴム弾性</h4>
+	<ul>
+	<li><a href="pub/hiratani/sim_hiratani.pdf">説明 [.pdf]</a></li>
+	<li><a href="pub/hiratani/Gum.zip">実行形式 [.zip]</a></li>
+	</ul>
+	<p class="update">作成者 平谷 ／ 更新日 2009/06/19</p>
+</td></tr>
+<tr><td><img src="pub/kamatsuka/IcoPerco.png" alt="パーコレーション" style="width:100px;height:100px;" /></td><td>
+	<h4>パーコレーション</h4>
+	<ul>
+	<li><a href="pub/kamatsuka/percolation.pdf">説明 [.pdf]</a></li>
+	<li><a href="pub/kamatsuka/percolation.zip">実行形式 [.zip]</a></li>
+	</ul>
+	<p class="update">作成者 鎌塚 ／ 更新日 2009/06/15</p>
+</td></tr>
+</table>
+<hr />
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+<!--+++++++++++++++++++++++++++++++++++++++++++++-->
+</body>
+</html>
