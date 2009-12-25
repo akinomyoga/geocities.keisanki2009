@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Physics Lab. 2009 計算機班 二年生の課題</title>
+<link rel="stylesheet" href="/keisanki2009/keisanki2009.std.css" charset="utf-8" />
+<script type="text/javascript">
+function ShowOnlineStatus(){
+	// Begin Online Status Indicator code
+	// http://osi.techno-st.net/
+	var onerror="this.onerror=null;this.src='http://osi.techno-st.net/icon/msn/23_off.png';";
+	var alt="MSN Online Status Indicator";
+	var src="http://osi.techno-st.net:8000/msn/#addr#/onurl=osi.techno-st.net/icon/msn/23_on.png/offurl=osi.techno-st.net/icon/msn/23_off.png/unknownurl=osi.techno-st.net/icon/msn/23_off.png";
+	var img='<img src="#src#" style="vertical-align:middle;border-width:0px;" alt="#alt#" onerror="#onerror#" />';
+	// End Online Status Indicator code
+	
+	function create_img(addr,host){
+		host=host.replace(/\+/g,".");
+		var src1=src.replace("#addr#",addr+unescape("%40")+host);
+		return img
+			.replace("#src#",src1)
+			.replace("#alt#",alt)
+			.replace("#onerror#",onerror);
+	}
+	document.getElementById("Murase").innerHTML=create_img("gamma0.5772","hotmail+co+jp");
+	document.getElementById("Kanazawa").innerHTML=create_img("silentnight222","hotmail+com");
+	document.getElementById("Sawada").innerHTML=create_img("shi9_ro_night","hotmail+co+jp");
+};
+
+</script>
+<style type="text/css">
+span.account{font-family:'MS Gothic',monospace;font-size:90%;}
+</style>
+</head>
+<body onload="ShowOnlineStatus();">
+<h1>計算機班 二年生の課題</h1>
+<p>更新が繁くて済みません...</p>
+<p>/* よく考えたら 2nd でなくて 14th か… */</p>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<h2>課題一覧</h2>
+<p>現在出ている課題の一覧です。。。</p>
+<table class="normal" align="center">
+<colgroup>
+ <col style="white-space:nowrap;"/>
+ <col/>
+ <col style="white-space:nowrap;" span="2"/>
+</colgroup>
+<tr><th>名称</th><th>概要</th><th>出題</th><th>期限</th></tr>
+<tr><td>課題1: 冬休みの課題 <a class="internal" href="#kadai1">詳細</a></td>
+	<td>冬休みの間に、コンパイラを準備して戴き、簡単なプログラムを作成してもらいます。</td>
+	<td>2008/12/30</td><td>2009/01/07</td></tr>
+<tr><td>課題2: 無題 <a class="internal" href="#kadai2">詳細</a></td>
+	<td></td>
+	<td>2009/01/09</td><td>2009/01/ <del>13</del>18</td></tr>
+</table>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<h2>提出の方法について</h2>
+<p>提出は、各班の班長さんにお願いします。各班内での回収の方法に関しては班長さんに一任します。
+班長さんは班員に提出の方法を指示して下さい。</p>
+<p>班長さんから出題者に回答を集める方法については、未だちょっと協議中です。
+今の段階では、何処かに upload してもらおうと考えています。
+詳細に関しては、決まり次第、各班班長に連絡するつもりです。</p>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<h2>相談・質問</h2>
+<p>躓いた所があったら/分からない事があったら/気になる事があったら/その他何かあったら、すぐに相談しましょう。</p>
+<p>コンパイラの導入の仕方・プログラムのコンパイルの仕方・エラーの特定などは只の経験だけで、
+別に一人でやり遂げたからと言って何か物理の深淵について理解を得られる訳でもありません。
+悩んでいるのは時間の無駄です!!</p>
+<p>質問・相談の方法は色々あります。下に挙げておきます。</p>
+<ul class="stars">
+<li>掲示板
+	<p><a href="http://jbbs.livedoor.jp/school/18312/">http://jbbs.livedoor.jp/school/18312/</a>
+	で質問・相談をお待ちしております。
+	質問・相談等は、「二年生ゼミについて」スレッドに書き込んで頂ければ良いでしょう。
+	</p>
+	<p>興味が在れば、他のスレッドにも書き込んで下さいな</p>
+</li>
+<li>Windows Live Messenger
+	<p>リアルタイムで話が出来るので、これが一番早く解決できると思います。
+	<small>(※ 解決を保証するものではありません)</small>
+	冬休みの間は、大体以下の三人の誰かがいる様にしますので、気軽に相談して下さい。
+	</p>
+	<ul class="live-accounts">
+	<li>金澤 <span id="Kanazawa"></span>&nbsp;<span lang="ja" class="account">silentnight222あっとhotmail.com</span></li>
+	<li>澤田 <span id="Sawada"></span>&nbsp;<span lang="ja" class="account">shi9_ro_nightあっとhotmail.co.jp</span></li>
+	<li>村瀬 <span id="Murase"></span>&nbsp;<span lang="ja" class="account">gamma0.5772あっとhotmail.co.jp</span></li>
+	</ul>
+	<p>※ 当初、金澤君のアドレスを誤っていました (222 が抜けていた)。
+	222 を抜かして登録していないか御確認下さい。</p>
+	<p>※ オンライン状態の表示には、techno さんが管理していらっしゃる
+	<a href="http://osi.techno-st.net/">Online Status Indicator</a> を利用しています。</p>
+</li>
+<li>各班内で相談
+	<p>自分の属している班の班長に相談するという方法もあります。
+	班長さんが答えられなくても、みんなで意見を出し合って考えるのも良いと思います。
+	各班、班内で活発に交流をして下さい。</p>
+</li>
+</ul>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<h1>各課題の詳細</h1>
+<h2 id="kadai1">課題1: 冬休みの課題</h2>
+<h3>1. コンパイラを入手して、コンパイル出来る環境を構築</h3>
+<h4>[課題]</h4>
+<p>Windows を御利用になっている方は、<a href="http://myoga.web.fc2.com/mayfes/cpp/drill01.htm">コンパイルと実行</a>
+を参考にして――或いは、もっと分かりやすい頁を探して――、コンパイラを導入してください。
+(もう既に、コンパイラを入手して使える様な状態になっている方は再度する必要はありません。当然の事ながら)
+</p>
+<p>※ 上の頁は、三年生向けに説明をした際の講義ノートの一頁に加筆した物です。
+(文脈的に変な所があるかも知れませんが、気にしないでください。
+それはこの頁が別の頁の続きになっているからであります。)</p>
+<p>ええと。他の OS を使っている方は…大抵詳しい人? だと思うので、説明は省略させて頂きます。
+(本音は、「Windows 以外は余り分からないから。」です…
+標準で gcc が入っている様な印象を受けますがどうなんでしょう…。)
+</p>
+<h4>[相談]</h4>
+<p>恐らく、一番躓くのが、プログラムを書く事ではなくて、コンパイラを導入する事だと思います…。
+問題が起こったら/何か分からない事・気になる事があったら、悩まずに直ぐに相談して下さい。
+一人で一時間も悩むのは時間が無駄です。</p>
+<h4>[提出] なし</h4>
+<p>何も提出しなくて良いです。報告も要りません。各自宜しくやって下さい。</p>
+<h3>2. 問題</h3>
+<h4>[課題]</h4>
+<p>homework_ver_terai.zip [<a href="B2Assign/homework_ver_terai.zip">.zip; 155kB</a>]</p>
+<p>上記のファイルの中にいくつか問題が入っています。
+その内の問題 1 から 問題 4 を解いて下さい。(以降の問題は、その次の課題で提出して頂きます。)
+プログラムを書いて、コンパイルして、動くかどうかを確認して頂ければ良いです。</p>
+<h4>[相談]</h4>
+<p>相談・質問の場所に書いた通り、悩んだら直ぐに質問・相談して下さい!</p>
+<h4>[提出] 1/7 迄</h4>
+<p>書いたソースコードと、コンパイルして出来た実行形式を提出して頂きます。
+(実行形式にウイルスとか仕込まないで下さいねー)
+</p>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<h2 id="kadai2">課題2: 無題</h2>
+<h3>課題</h3>
+<h4>1. 基本の問題</h4>
+<p>この問題に関しては「もう自習したり何なりで自分は理解していて、見なくても書ける」という方はやらなくて構いません。</p>
+<ul>
+<li>homework_ver_terai.zip [<a href="B2Assign/homework_ver_terai.zip">.zip; 155kB</a>]
+の中の問題の残り (問題5 から 問題 8) を解いて下さい。
+もう既に前回の課題の際に解いて提出してしまった方は再度提出して頂く必要はありません。
+</li>
+<li>更に function_basic.doc [<a href="B2Assign/function_basic.doc">.doc; 83kB</a>]
+の中の問題を全て解いて下さい。
+</li>
+</ul>
+
+<h4>2. 応用の問題</h4>
+<p><a href="http://myoga.web.fc2.com/mayfes/cpp/drill02.htm">練習問題 1</a> (これは、三年生が一番初めに解いた問題です)
+の、[1] [2] を解いて下さい。</p>
+<ul>
+<li>[2] は剰余演算子 % を使うと良いです。
+a%b は整数 a を整数 b で割った時の余りになります。例えば、20%7==6 です。</li>
+<li>分からない人は、次の頁にある答えを見ても構いません。但し、コピペなどはせずに、自分の手で書き写して慣れる様にしましょう。</li>
+<li>余力がある人、物足りないという人は [3] [4] も解いてみて下さい。(未だ説明していない知識を利用したりする所もありますが…)</li>
+</ul>
+
+<h4>3. アンケート</h4>
+<p>前回の問題が簡単すぎるのではないかという意見もあったので、少し皆さんの意見を聞きたいと思います。
+(掲示板に書き込んでくれて構わなかったのですが、雰囲気的に書き辛いかも知れないので、此処で問う事にします。)
+</p>
+<ul>
+<li>難易度について。
+	<p>先ず、"1 (易しい) ～ 5 (難しい)" で教えて欲しいです。
+	また、"簡単で退屈" だとか "時間が足りない" とか、そう言う事があったら書き込んで下さい。
+	全体的な評価でも良いですし、特にこの問題はどうであるとかでも構いません。</p>
+</li>
+<li>その他意見等。
+	<p>課題の方向性についての意見、課題に出す問題の提案・要望、などなどお願いします。</p>
+</li>
+</ul>
+<p>それぞれ、一行ずつでも良いので書いて頂けると助かります。</p>
+
+<h3>相談</h3>
+<p>分からない所とか有ったら、気楽に何処かに相談して下さいねー</p>
+
+<h3>提出</h3>
+<p>提出は <del>1/13</del> 1/18 迄です。(連絡のし忘れによって変更されました) 各班班長の方に提出をお願いします。</p>
+<p>班長さんは、各自班員に解答の回収の方法を指示して下さい。
+また、提出の方法は前回と同様です。
+(今回は、それぞれの班用のサブディレクトリを B2AssignmentBox の中に作っておいたので、其処にお願いします。)
+</p>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+</body>
+</html>
